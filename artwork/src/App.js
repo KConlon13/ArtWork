@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Welcome from './Welcome'
+import ArtistsContainer from "./ArtistsContainer"
 
 class App extends React.Component {
   state={

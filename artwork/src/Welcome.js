@@ -1,23 +1,17 @@
 import React from 'react'
-import ArtistView from "./ArtistView"
+import ArtistCard from "./ArtistCard"
+import ArtistsContainer from './ArtistsContainer';
 
 class Welcome extends React.Component {
 
-// need to put IDs on artists in API!
-
     render(){
-        let artists = this.props.artistContainer.map(artist=> (
-            <ArtistView key={artist.name} obj={artist}/>
-        ))
 
+    let artists = this.props.artistContainer.map(artist => <ArtistsContainer key={artist.id} obj={artist} /> )
         return (
-            <div>
-                <h1><u>All Artists:</u></h1>
-                {artists}
-            </div>
-        )
-    }
+            <div class="dfkjgkj" >{artists} </div>
+            
+ ) 
 
-}
+}}
 
 export default Welcome;
