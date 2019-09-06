@@ -1,17 +1,11 @@
 import React from 'react'
-import ArtistCard from "./ArtistCard"
-import Welcome from "./Welcome"
 
-class ArtistsContainer extends React.Component {
-
-    clickHandler = () => {
-        // {<ArtistCard artist={this.props.obj}/>} // this is not correct, think we need to create another component above this
-    }
+class ArtistsCard extends React.Component {
 
 
     render(){
         return(
-            <div className="artistContainer" onClick={() => this.clickHandler()}> 
+            <div className="artistContainer" onClick={() => this.props.clickHandler(this.props.obj)}> 
              
             <div
             className="ui card"
@@ -54,4 +48,4 @@ class ArtistsContainer extends React.Component {
 
 }
 
-export default ArtistsContainer;
+export default ArtistsCard;
