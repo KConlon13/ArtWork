@@ -19,8 +19,41 @@ code {
     box-shadow: 5px 5px 5px;
 }
 
+
+
+#profile-img {
+  height: 100%;
+  width: 100%;
+  /* box-shadow: 5px 5px 5px; */
+}
+
 .welcome {
   font-family: 'Satisfy', cursive;
   font-size: 50px;
 }
+.artistContainer {
+display: inline-grid;
+margin: 10px;
+}
 
+.bot-army {
+  overflow-x: scroll;
+  min-height: 300px;
+  max-width: 100%;
+}
+.ui.grid {
+  flex-wrap: nowrap;
+  min-height: 100%;
+}
+.ui.grid {
+  padding: 0px 20px;
+}
+
+.ui.card{
+  /* height: 30vw; */
+}
+
+
+.image{
+  height: 20vh
+}
