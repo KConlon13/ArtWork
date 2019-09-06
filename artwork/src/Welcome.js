@@ -1,16 +1,25 @@
 import React from 'react'
-import ArtistCard from "./ArtistCard"
-import ArtistsContainer from './ArtistsContainer';
+import ArtistCollection from './ArtistCollection'
 
 class Welcome extends React.Component {
+    state={
+        artistContainer: []
+        }
+
+        componentDidMount(){
+        fetch("http://localhost:3000/artists")
+        .then(response=>response.json())
+        .then(data => this.setState({
+            artistContainer: data
+        }))
+        }
+
 
     render(){
-
-    let artists = this.props.artistContainer.map(artist => <ArtistsContainer key={artist.id} obj={artist} /> )
         return (
-            <div class="dfkjgkj" >{artists} </div>
-            
- ) 
+            <ArtistCollection artistContainer={this.state.artistContainer}/>
+        )
+
 
 }}
 
