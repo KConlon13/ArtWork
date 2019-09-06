@@ -12,7 +12,7 @@ class Welcome extends React.Component {
 
         return (
             <div>
-                <h1>Artists:</h1>
+                <h1><u>All Artists:</u></h1>
                 {artists}
             </div>
         )

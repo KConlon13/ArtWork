@@ -18,7 +18,8 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-        <h1>Welcome to ArtWork 🎨</h1>
+        <h1 className="welcome">ArtWork</h1>
+        <hr/>
         <Welcome artistContainer={this.state.artistContainer}/>
       </div>
     );
