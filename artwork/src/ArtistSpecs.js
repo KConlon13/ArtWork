@@ -15,6 +15,7 @@ class ArtistSpecs extends React.Component {
                 <h3>Phone: {this.props.obj.phone}</h3>
                 <h3>Email: {this.props.obj.email}</h3>
                 <h3>Website: {this.props.obj.website}</h3> 
+                <button className="backButton" onClick={()=>this.props.clickHandler(this.props.obj)}>Back to All Artists</button>
                 <hr/>
             </div>         
         )

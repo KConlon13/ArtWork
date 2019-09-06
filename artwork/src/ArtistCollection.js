@@ -25,7 +25,7 @@ render(){
         
         <div>
         {this.state.specsToggle ? 
-            <div>({artistCard})</div> : <div>({artistSpecs})</div>  
+            <div>{artistCard}</div> : <div>{artistSpecs}</div>  
         } 
         </div>
         
