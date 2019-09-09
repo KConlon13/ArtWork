@@ -1,10 +1,14 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 
 class ArtistsCard extends React.Component {
 
 
     render(){
+        let spacedName = this.props.obj.username.split(" ").join("_")
         return(
+            <Link to={`/artists/${spacedName}`}>
+
             <div className="artistContainer" onClick={() => this.props.clickHandler(this.props.obj)}> 
              
             <div
@@ -35,6 +39,7 @@ class ArtistsCard extends React.Component {
             </div>
             </div>
             </div>
+            </Link>
             
             // <div onClick={() => console.log("clicked")}>
             //     <img  class="profile-img" alt= "artist's featured piece" src={this.props.obj.profilePic}/>

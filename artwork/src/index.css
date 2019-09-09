@@ -57,8 +57,13 @@ code {
   /* box-shadow: 5px 5px 5px; */
 }
 
+a{
+  color: black
+}
+
 .welcome {
   font-family: 'Satisfy', cursive;
+  color: black;
   font-size: 50px;
   background-color: white;
   border-bottom: 5px solid rgb(165, 244, 247);

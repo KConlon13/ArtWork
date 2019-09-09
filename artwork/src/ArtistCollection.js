@@ -2,6 +2,7 @@ import React from 'react'
 import ArtistsCard from './ArtistsCard'
 import ArtistSpecs from './ArtistSpecs';
 
+
 class ArtistCollection extends React.Component {
     state = {
         specsToggle: true,
@@ -26,7 +27,7 @@ render(){
 
     return (
         <div>
-        <div class="ui menu">
+        {/* <div class="ui menu">
         <div className="item">
         <h1 className="welcome" onClick={()=> (this.setState({specsToggle: true}))}>ArtWork</h1>
         </div>
@@ -36,14 +37,15 @@ render(){
         <div class="item">
            <div class="ui button" onClick={() => console.log("login")}>Log-in</div>
       </div>
-      </div>
-        
+      </div> */}
         <div class="artistbody">
         {this.state.specsToggle ? 
             <div>{artistCard}</div> : <div>{artistSpecs}</div>  
         } 
         </div>
+  
         </div>
+
         
         
     )     
