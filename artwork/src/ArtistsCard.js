@@ -19,7 +19,7 @@ class ArtistsCard extends React.Component {
                 {this.props.obj.username}
                 </div>
                 <div className="meta text-wrap">
-                <small>{this.props.obj.bio}</small>
+                <small id="smallText">{this.props.obj.bio}</small>
                 </div>
             </div>
             <div className="extra content">
@@ -27,6 +27,7 @@ class ArtistsCard extends React.Component {
                 <i className="icon home" />
                 {this.props.obj.location}
                 </span>
+                <br/>
                 <span>
                 <i className="icon paint brush" />
                 {this.props.obj.category}

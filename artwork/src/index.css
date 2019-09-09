@@ -1,3 +1,14 @@
+html { 
+  background: url(https://i.imgur.com/eywV7qg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+
+}
+
 body {
   margin: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -6,20 +17,39 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Poiret One', cursive;
+  background: none
+
 }
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
+.artistbody{
+  background: none
+}
+
 .feature-img {
-    height: 400px;
-    width: 600px;
+    height: 50%;
+    width: 100%;
     box-shadow: 5px 5px 5px;
 }
 
+.artistSpec {
+  background-color: white;
+  width: 60vw;
+  display: inline-block;
+  border-radius: 35px;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px
 
+
+
+}
 
 #profile-img {
   height: 100%;
@@ -30,10 +60,18 @@ code {
 .welcome {
   font-family: 'Satisfy', cursive;
   font-size: 50px;
+  background-color: white;
+  border-bottom: 5px solid rgb(165, 244, 247);
+ 
+  
+
 }
 .artistContainer {
 display: inline-grid;
 margin: 10px;
+filter: opacity(1);
+border-radius: 20px;
+/* border: 10px solid white */
 }
 
 .bot-army {
@@ -50,10 +88,42 @@ margin: 10px;
 }
 
 .ui.card{
-  /* height: 30vw; */
+  border: 15px solid white;
+  border-radius: 20px
+}
+
+small {
+  color: rgb(122, 121, 121);
+  font-size: 13px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+
+}
+
+span {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color:  rgb(122, 121, 121)
 }
 
 
 .image{
   height: 20vh
+}
+
+.profile-specs
+{ 
+  max-height: 50vh;
+  width: 100%
+}
+
+/* .content {
+  max-height: 10vh;
+
+} */
+
+#smallText{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
 }
