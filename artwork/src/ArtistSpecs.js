@@ -3,6 +3,7 @@ import React from 'react'
 class ArtistSpecs extends React.Component {
 
     render(){
+        console.log('artist specs')
         return(
             <div>
             <div class="overlay fixed" style={{position: "sticky", top: "20px", right: "auto", zIndex: "20", float:"right"}}>
@@ -24,7 +25,7 @@ class ArtistSpecs extends React.Component {
                 <h3>Phone: {this.props.obj.phone}</h3>
                 <h3>Email: {this.props.obj.email}</h3>
                 <h3>Website: {this.props.obj.website}</h3> 
-                <button className="backButton" onClick={()=>this.props.clickHandler(this.props.obj)}>Back to All Artists</button>
+                {/* <button className="backButton" onClick={()=>this.props.clickHandler(this.props.obj)}>Back to All Artists</button> */}
             </div>
             </div>
 

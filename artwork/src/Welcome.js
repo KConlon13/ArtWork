@@ -14,11 +14,6 @@ class Welcome extends React.Component {
         }))
         }
 
-    logoClickHandler=()=>{
-        console.log("been")
-        return(<ArtistCollection artistContainer={this.state.artistContainer}/>)
-    }
-
     render(){
         return (
             <div>

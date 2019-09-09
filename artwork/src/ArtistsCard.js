@@ -1,24 +1,24 @@
 import React from 'react'
-import {Link} from "react-router-dom"
+import {Link, Route} from "react-router-dom"
+import ArtistSpecs from './ArtistSpecs';
 
 class ArtistsCard extends React.Component {
 
 
     render(){
-        let spacedName = this.props.obj.username.split(" ").join("_")
+        let spacedName = this.props.obj.username.split(" ").join("_") 
         return(
             <Link to={`/artists/${spacedName}`}>
+            {/* <Route path={`/artists/:name`} component={<ArtistSpecs obj={this.props.obj}/>} /> */}
+            
 
-            <div className="artistContainer" onClick={() => this.props.clickHandler(this.props.obj)}> 
-             
-            <div
-            className="ui card"
-            key={this.props.obj.id}
-            >
-            <div className="image">
+
+            <div className="artistContainer" > 
+                <div className="ui card"key={this.props.obj.id}>
+                <div className="image">
                 <img id="profile-img" alt="oh no!" src={this.props.obj.profilePic} />
-            </div>
-            <div className="content">
+                </div>
+            <div className="content">  
                 <div className="header">
                 {this.props.obj.username}
                 </div>
@@ -40,15 +40,7 @@ class ArtistsCard extends React.Component {
             </div>
             </div>
             </Link>
-            
-            // <div onClick={() => console.log("clicked")}>
-            //     <img  class="profile-img" alt= "artist's featured piece" src={this.props.obj.profilePic}/>
-            //     <h1>Username: {this.props.obj.username}</h1>
-            //     <h1>Location: {this.props.obj.location}</h1>
-            //     <h1>Style: {this.props.obj.category}</h1>
-            //     <img  class="feature-img" alt= "artist's featured piece" src={this.props.obj.feature}/>
-            //     <hr/>
-            // </div>         
+                  
         )
     }
 

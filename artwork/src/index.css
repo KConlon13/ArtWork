@@ -132,3 +132,25 @@ span {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
 }
+
+#signup-form {
+  background-color: white;
+  margin: 8px 8px 20px 8px;
+  border-radius: 0.8em;
+}
+.field {
+  padding-bottom: 12px;
+}
+form {
+  padding: 8px;
+  margin: 20px;
+  resize: both;
+  overflow: auto;
+}
+#signup-form {
+  margin: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  padding-top: 5px;
+}
