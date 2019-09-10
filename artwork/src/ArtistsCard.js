@@ -6,10 +6,11 @@ class ArtistsCard extends React.Component {
 
 
     render(){
-        let spacedName = this.props.obj.username.split(" ").join("_") 
+        console.log("props", this.props)
+        // let spacedName = this.props.obj.username.split(" ").join("_") 
         return(
-            <Link to={`/artists/${spacedName}`}>
-            {/* <Route path={`/artists/:name`} component={<ArtistSpecs obj={this.props.obj}/>} /> */}
+            <a class="hover">
+            <Link to={`/artists/${this.props.obj.id}`}>
             
 
 
@@ -40,6 +41,7 @@ class ArtistsCard extends React.Component {
             </div>
             </div>
             </Link>
+            </a>
                   
         )
     }

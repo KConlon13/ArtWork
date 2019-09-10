@@ -3,7 +3,7 @@ import React from 'react'
 class ArtistSpecs extends React.Component {
 
     render(){
-        console.log('artist specs')
+        console.log(this.props)
         return(
             <div>
             <div class="overlay fixed" style={{position: "sticky", top: "20px", right: "auto", zIndex: "20", float:"right"}}>
