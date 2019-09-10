@@ -158,3 +158,15 @@ form {
 a .hover :hover{
   background-color: black;
 }
+
+.column {
+  background-color: white;
+  margin: 8%;
+  border-radius: 0.8em;
+}
+.signin header {
+margin-top: 10px;
+}
+.ui.message {
+  font-family: Helvetica, Arial, Helvetica, sans-serif;
+}

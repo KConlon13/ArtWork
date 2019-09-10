@@ -1,5 +1,5 @@
 import React from "react"
-
+// import { withRouter } from 'react-router'
 class Form extends React.Component {
 state={
     username: "",
@@ -18,17 +18,61 @@ changeHandler=(event)=>{
     let {name, value} = event.target
     this.setState({
         [name]: value
+    
     })
 }
+
+handleSubmit = (e, state) => {
+    e.preventDefault()
+    console.log(state)
+    fetch("http://localhost:3000/artists", {
+        headers: {
+            'content-type': 'application/json',
+            'accept': 'application/json'
+          },
+      method: 'POST',
+      body: JSON.stringify({
+        username: state.username,
+        location: state.location,
+        category: state.category,
+        bio: state.bio,
+        rate: state.rate,
+        phone: state.phone,
+        email: state.email,
+        website: state.website,
+        profilePic: state.profilePic,
+        feature: state.feature,
+        password: state.password
+      }),
+    })
+    //   .then(response => response.json())
+    //   .then(data => {
+    //     localStorage.setItem('userId', data.id)
+    //     console.log(data)
+    //     this.setUser(data)
+    //     this.history.push('/artists')
+    //   })
+    this.setState({
+        username: "",
+        location: "",
+        category: "",
+        bio: "",
+        rate: "",
+        phone: "",
+        email: "",
+        website: "",
+        profilePic: "",
+        feature: "",
+        password: ""
+    })
+  }
 render(){
     return(
     <div id="signup-form">
-        <form className="ui form" onSubmit={((event) => this.props.submitHandler(event, this.state))} >
+        <form className="ui form" onSubmit={((event) => this.handleSubmit(event, this.state))} >
             <h3 class="ui dividing header">Become an ArtWork Artist</h3>
             <br/>
-​
             <div class="two fields">
-​
             <div class="field" >
             <div class="ui left icon input">
             <i class="user icon"></i>
@@ -41,7 +85,6 @@ render(){
                         />
                 </div>
             </div>
-​
             <div class="field">
             <div class="ui left icon input">
             <i class="lock icon"></i>
@@ -90,7 +133,6 @@ render(){
                         />
             </div>
             <div class="three fields">
-​
             <div class="field">
             <div class="ui left icon input">
             <i class="dollar icon"></i>
@@ -172,4 +214,5 @@ render(){
         </div>
     )}
 }
+// export default withRouter(Form);
 export default Form;

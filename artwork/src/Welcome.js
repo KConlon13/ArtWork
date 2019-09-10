@@ -5,7 +5,6 @@ class Welcome extends React.Component {
 
 
     render(){
-        console.log("welcome")
         return (
             <div>
             <ArtistCollection />
