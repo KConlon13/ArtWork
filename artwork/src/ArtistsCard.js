@@ -6,7 +6,7 @@ class ArtistsCard extends React.Component {
 
 
     render(){
-        console.log("props", this.props)
+        // console.log("props", this.props)
         // let spacedName = this.props.obj.username.split(" ").join("_") 
         return(
             <a class="hover">

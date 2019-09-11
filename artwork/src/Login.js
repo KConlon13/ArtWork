@@ -23,7 +23,7 @@ class Login extends React.Component {
   
           console.log(data)
           this.props.setUser(data.user)
-          this.props.history.push('/members')
+          this.props.history.push('/artists')
         })
     }
     render(){

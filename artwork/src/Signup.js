@@ -1,6 +1,6 @@
 import React from "react"
 // import { withRouter } from 'react-router'
-class Form extends React.Component {
+class Signup extends React.Component {
 state={
     username: "",
     location: "",
@@ -8,17 +8,18 @@ state={
     bio: "",
     rate: "",
     phone: "",
-    email: "",
+    emailLink: "",
     website: "",
     profilePic: "",
     feature: "",
-    password: ""
+    password: "",
+    instagram: "",
+    facebook: ""
 }
 changeHandler=(event)=>{
     let {name, value} = event.target
     this.setState({
         [name]: value
-    
     })
 }
 
@@ -38,11 +39,13 @@ handleSubmit = (e, state) => {
         bio: state.bio,
         rate: state.rate,
         phone: state.phone,
-        email: state.email,
+        emailLink: state.emailLink,
         website: state.website,
         profilePic: state.profilePic,
         feature: state.feature,
-        password: state.password
+        password: state.password,
+        facebook: state.facebook,
+        instagram: state.instagram
       }),
     })
     //   .then(response => response.json())
@@ -59,11 +62,13 @@ handleSubmit = (e, state) => {
         bio: "",
         rate: "",
         phone: "",
-        email: "",
+        emailLink: "",
         website: "",
         profilePic: "",
         feature: "",
-        password: ""
+        password: "",
+        instagram: "",
+        facebook: ""
     })
   }
 render(){
@@ -189,8 +194,8 @@ render(){
             <i class="mail icon"></i>
                     <input 
                         type="text" 
-                        name="email" 
-                        value={this.state.email} 
+                        name="emailLink" 
+                        value={this.state.emailLink} 
                         onChange={this.changeHandler}
                         placeholder="Email Address"
                         />
@@ -209,10 +214,43 @@ render(){
             </div>
             </div> 
             </div>
+
+
+            <h5 class="ui dividing header">Socials:</h5>
+            <div class="two fields">
+
+            <div class="field">
+            <div class="ui left icon input">
+            <i class="instagram icon"></i>
+                    <input 
+                        type="text" 
+                        name="instagram" 
+                        value={this.state.instagram} 
+                        onChange={this.changeHandler}
+                        placeholder="Instagram URL"
+                        />
+            </div>
+            </div>
+
+            <div class="field">
+            <div class="ui left icon input">
+            <i class="facebook icon"></i>
+                    <input 
+                        type="text" 
+                        name="facebook" 
+                        value={this.state.facebook} 
+                        onChange={this.changeHandler}
+                        placeholder="Facebook URL"
+                        />
+            </div>
+            </div>
+
+            </div>
+
             <button class="ui teal button" type="submit">Sign Up</button>
             </form>
         </div>
     )}
 }
 // export default withRouter(Form);
-export default Form;
+export default Signup;

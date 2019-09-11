@@ -13,8 +13,9 @@ class ArtistCollection extends React.Component {
         componentDidMount(){
         fetch("http://localhost:3000/artists")
         .then(response=>response.json())
-        .then(data => this.setState({artistsArray: data}))
-        }
+        .then(data => this.setState({artistsArray: data})
+        
+        )}
 
 
 render(){
