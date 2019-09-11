@@ -120,10 +120,6 @@ span {
   width: 100%
 }
 
-/* .content {
-  max-height: 10vh;
-
-} */
 
 #smallText{
   overflow: hidden;
@@ -169,4 +165,10 @@ margin-top: 10px;
 }
 .ui.message {
   font-family: Helvetica, Arial, Helvetica, sans-serif;
+}
+
+.ui.labeled.icon.menu {
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 0.8em;
 }
