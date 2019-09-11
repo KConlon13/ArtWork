@@ -5,9 +5,9 @@ class ArtistSpecs extends React.Component {
             <div>
             <div class="overlay fixed" style={{position: "sticky", top: "20px", right: "auto", zIndex: "20", float:"right"}}>
                 <div class="ui labeled icon vertical menu">
-                    <a class="item"><i class="instagram icon"></i> Instagram</a>
-                    <a class="item"><i class="facebook icon"></i> Facebook</a>
-                    <a class="item"><i class="mail icon"></i> E-mail</a>
+                    <a class="item" href={this.props.obj.instagram} target="_blank"><i class="instagram icon purple"></i> Instagram</a>
+                    <a href={this.props.obj.facebook} target="_blank" class="item"><i class="facebook icon blue"></i> Facebook</a>
+                    <a href={"mailto:" + this.props.obj.emailLink} target="_blank" class="item"><i class="mail icon grey"></i> E-mail</a>
                 </div>
       </div>
             <div class="artistSpec">
@@ -20,10 +20,10 @@ class ArtistSpecs extends React.Component {
                 <h3>Rate: ${this.props.obj.rate}</h3>
                 <img  class="feature-img" alt= "Artist's featured piece" src={this.props.obj.feature}/>
                 <h1>Contact Info: </h1>
-                <h3>Phone: {this.props.obj.phone}</h3>
-                <h3>Email: {this.props.obj.email}</h3>
-                <h3>Website: {this.props.obj.website}</h3> 
-                <button className="backButton" onClick={()=>this.props.clickHandler(this.props.obj)}>Back to All Artists</button>
+                <h5>{this.props.obj.phone}</h5> 
+                <h5><a href={this.props.obj.website} target="_blank">{this.props.obj.website}</a></h5> 
+                <h5><a href={"mailto:" + this.props.obj.emailLink} target="_blank">{this.props.obj.emailLink}</a></h5> 
+                {/* <button className="backButton" onClick={()=>this.props.clickHandler(this.props.obj)}>Back to All Artists</button> */}
             </div>
             </div>
         )

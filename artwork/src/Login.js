@@ -8,7 +8,7 @@ class Login extends React.Component {
     handleChange = e => this.setState({ [e.target.name]: e.target.value })
     handleSubmit = e => {
       e.preventDefault()
-      fetch('http://localhost:4000/api/v1/login', {
+      fetch('http://localhost:3000/login', {
         method: 'POST',
         body: JSON.stringify(this.state),
         headers: {
@@ -16,15 +16,15 @@ class Login extends React.Component {
           'accept': 'application/json'
         }
       })
-        .then(response => response.json())
-        .then(data => {
+        // .then(response => response.json())
+        // .then(data => {
   
-          localStorage.setItem('token', data.token)
+        //   localStorage.setItem('token', data.token)
   
-          console.log(data)
-          this.props.setUser(data.user)
-          this.props.history.push('/members')
-        })
+        //   console.log(data)
+        //   this.props.setUser(data.user)
+        //   this.props.history.push('/members')
+        // })
     }
     render(){
         return (
