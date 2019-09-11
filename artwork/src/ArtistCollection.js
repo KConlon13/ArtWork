@@ -48,7 +48,7 @@ render(){
         <div>
 
 {       this.state.artistsArray.length > 0 ? ( <div>
-            <SearchForm changeHandler={this.changeHandler}/>
+
 
             <Switch>
             <Route path="/artists/:id" render={(routerProps) => {
@@ -56,11 +56,14 @@ render(){
                             let artist = this.state.artistsArray.find(artist => artist.id === parseInt(id))
             return <ArtistSpecs obj={artist}/> }}/>
 
-
             <Route path="/" render={() => (
                             <div>
-                                <>{artistComponents}</>
+                                <SearchForm changeHandler={this.changeHandler}/>
+                                <>{artistComponents}</>            
+                                
+
                             </div>)}/>
+            
             </Switch>
 
         
