@@ -1,5 +1,5 @@
 import React from "react"
-// import { withRouter } from 'react-router'
+import { withRouter } from 'react-router'
 class Signup extends React.Component {
 state={
     username: "",
@@ -47,13 +47,10 @@ handleSubmit = (e, state) => {
         instagram: state.instagram
       }),
     })
-    //   .then(response => response.json())
-    //   .then(data => {
-    //     localStorage.setItem('userId', data.id)
-    //     console.log(data)
-    //     this.setUser(data)
-    //     this.history.push('/artists')
-    //   })
+      .then(response => response.json())
+      .then(data => {this.props.history.push(`/artists/${data.id}`)
+      })
+    
     this.setState({
         username: "",
         location: "",
@@ -245,5 +242,4 @@ render(){
         </div>
     )}
 }
-// export default withRouter(Form);
-export default Signup;
+export default withRouter(Signup);
