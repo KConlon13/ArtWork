@@ -8,15 +8,25 @@ import ArtistSpecs from "./ArtistSpecs"
 import { Route, Switch, Link } from 'react-router-dom'
 
 class App extends React.Component {
-
+state={
+  user_id: null
+}
   
+loginHandler=(obj)=> {
+  this.setState({
+    user_id: obj
+  })
+}
+
   render(){
-    
     return (
       <div class="App">
         <Navbar/>
         <Switch>
-        <Route path="/login" component={Login}/>
+        <Route path="/login" render={
+
+          () => <Login loginHandler={this.loginHandler} user_id={this.state.user_id}/>}
+          />
         <Route path="/Signup" component={Signup}/>
         <Route path= "/"  component={Welcome}/>
         {/* <Route path="/artists/:name" component={ArtistSpecs}/> */}

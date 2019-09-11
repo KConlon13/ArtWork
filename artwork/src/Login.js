@@ -7,6 +7,7 @@ class Login extends React.Component {
     }
     handleChange = e => this.setState({ [e.target.name]: e.target.value })
     handleSubmit = e => {
+        console.log("clicked submit", this.state)
       e.preventDefault()
       fetch('http://localhost:3000/login', {
         method: 'POST',
@@ -16,15 +17,14 @@ class Login extends React.Component {
           'accept': 'application/json'
         }
       })
-        // .then(response => response.json())
-        // .then(data => {
+        .then(response => response.json())
+        .then(data => {
+            console.log(data.user)
+          localStorage.setItem('token', data.token)
   
-        //   localStorage.setItem('token', data.token)
-  
-        //   console.log(data)
-        //   this.props.setUser(data.user)
-        //   this.props.history.push('/members')
-        // })
+          this.props.loginHandler(data.user.id)
+          this.props.history.push(`/artists/${data.user.id}`)
+        })
     }
     render(){
         return (
@@ -49,9 +49,9 @@ class Login extends React.Component {
                                     <input type="text" name="password" placeholder="Enter Password" value={this.state.password} onChange={this.handleChange}/>
                                 </div>
                             </div>
-                            <div class="ui fluid large teal submit button">
+                            <button class="ui fluid large teal submit button" type="submit">
                                 Login
-                            </div>
+                            </button>
                             <div class="ui error message"></div>
                             <div class="ui message">
                                 New to us?
@@ -64,5 +64,5 @@ class Login extends React.Component {
         )
     }
 }
-// export default withRouter(Login);
-export default Login;
+export default withRouter(Login);
+// export default Login;
