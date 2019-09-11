@@ -1,5 +1,6 @@
 import React from "react"
-// import { withRouter } from 'react-router'
+import { withRouter } from 'react-router'
+
 class Form extends React.Component {
 state={
     username: "",
@@ -52,6 +53,8 @@ handleSubmit = (e, state) => {
     //     this.setUser(data)
     //     this.history.push('/artists')
     //   })
+
+
     this.setState({
         username: "",
         location: "",
@@ -66,7 +69,7 @@ handleSubmit = (e, state) => {
         password: ""
     })
   }
-render(){
+render(){console.log(this.props)
     return(
     <div id="signup-form">
         <form className="ui form" onSubmit={((event) => this.handleSubmit(event, this.state))} >
@@ -215,4 +218,4 @@ render(){
     )}
 }
 // export default withRouter(Form);
-export default Form;
+export default withRouter(Form);
