@@ -1,5 +1,4 @@
 import React from 'react'
-
 class ArtistSpecs extends React.Component {
     render(){
         return(
@@ -31,4 +30,8 @@ class ArtistSpecs extends React.Component {
     
     }
 }
+<<<<<<< HEAD
 export default ArtistSpecs;
+=======
+export default ArtistSpecs;
+>>>>>>> master
