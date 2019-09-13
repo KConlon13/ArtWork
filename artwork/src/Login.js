@@ -1,5 +1,7 @@
 import React from "react"
 import { withRouter } from 'react-router'
+import { Link } from 'react-router-dom';
+
 class Login extends React.Component {
     state={
         username: "",
@@ -46,7 +48,7 @@ class Login extends React.Component {
                             <div class="field">
                                 <div class="ui left icon input">
                                     <i class="lock icon"></i>
-                                    <input type="text" name="password" placeholder="Enter Password" value={this.state.password} onChange={this.handleChange}/>
+                                    <input type="password" name="password" placeholder="Enter Password" value={this.state.password} onChange={this.handleChange}/>
                                 </div>
                             </div>
                             <button class="ui fluid large teal submit button" type="submit">
@@ -55,7 +57,7 @@ class Login extends React.Component {
                             <div class="ui error message"></div>
                             <div class="ui message">
                                 New to us?
-                                <a href="#">  Sign Up</a>
+                                <Link to="/signup">Sign Up</Link>
                             </div>
                         </div>
                     </form>

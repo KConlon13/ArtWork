@@ -19,9 +19,10 @@ loginHandler=(obj)=> {
 }
 
   render(){
+    console.log('CURRENT USER', this.state.user_id, localStorage)
     return (
       <div class="App">
-        <Navbar/>
+        <Navbar user_id={this.state.user_id} loginHandler={this.loginHandler}/>
         <Switch>
         <Route path="/login" render={
 
