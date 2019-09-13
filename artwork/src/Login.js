@@ -22,14 +22,8 @@ class Login extends React.Component {
             console.log(data.user)
           localStorage.setItem('token', data.token)
   
-<<<<<<< HEAD
-          console.log(data)
-          this.props.setUser(data.user)
-          this.props.history.push('/artists')
-=======
           this.props.loginHandler(data.user.id)
           this.props.history.push(`/artists/${data.user.id}`)
->>>>>>> master
         })
     }
     render(){

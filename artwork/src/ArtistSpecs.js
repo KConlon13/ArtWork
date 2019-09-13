@@ -30,8 +30,4 @@ class ArtistSpecs extends React.Component {
     
     }
 }
-<<<<<<< HEAD
 export default ArtistSpecs;
-=======
-export default ArtistSpecs;
->>>>>>> master

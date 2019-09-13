@@ -1,9 +1,5 @@
 import React from "react"
-<<<<<<< HEAD
-// import { withRouter } from 'react-router'
-=======
 import { withRouter } from 'react-router'
->>>>>>> master
 class Signup extends React.Component {
 state={
     username: "",
@@ -214,16 +210,8 @@ render(){
             </div>
             </div> 
             </div>
-<<<<<<< HEAD
-
-
             <h5 class="ui dividing header">Socials:</h5>
             <div class="two fields">
-
-=======
-            <h5 class="ui dividing header">Socials:</h5>
-            <div class="two fields">
->>>>>>> master
             <div class="field">
             <div class="ui left icon input">
             <i class="instagram icon"></i>
@@ -236,10 +224,6 @@ render(){
                         />
             </div>
             </div>
-<<<<<<< HEAD
-
-=======
->>>>>>> master
             <div class="field">
             <div class="ui left icon input">
             <i class="facebook icon"></i>
@@ -252,21 +236,10 @@ render(){
                         />
             </div>
             </div>
-<<<<<<< HEAD
-
             </div>
-
-=======
-            </div>
->>>>>>> master
             <button class="ui teal button" type="submit">Sign Up</button>
             </form>
         </div>
     )}
 }
-<<<<<<< HEAD
-// export default withRouter(Form);
-export default Signup;
-=======
 export default withRouter(Signup);
->>>>>>> master
