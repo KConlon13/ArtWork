@@ -10,11 +10,8 @@ BUILD STATUS: Complete
 
 TECH/FRAMEWORKS USED
 
--React
--Javascript
--Ruby on Rails
--Semantic UI
--React Router
+Built with React, Javascript, Ruby on Rails, Semantic UI, and React Router
+
 
 Features:
 -Companies can view all artists
@@ -34,10 +31,13 @@ SCREENSHOTS
 <img width="1283" alt="Screen Shot 2019-10-18 at 11 35 57 AM" src="https://user-images.githubusercontent.com/47828048/67108918-749b3900-f19d-11e9-95f6-cb8d5266b776.png">
 
 INSTALLATION
+
 -Backend => in the command line, run: 
+
   1. rails db:migrate
   2. rails db:seed
   3. rails s
+  
 -Frontend => type "npm start" into the command line
 
 API REFERENCE
