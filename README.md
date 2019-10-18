@@ -12,15 +12,21 @@ TECH/FRAMEWORKS USED
 
 Built with React, Javascript, Ruby on Rails, Semantic UI, and React Router
 
+FEATURES
 
-Features:
--Companies can view all artists
--Companies may sort through all artists based on what their art style is (graffiti, street art, urban contemporary, etc)
--Companies can click on a specific artists card to view their profile page with more details about them
--Companies can contact an artist by email, phone, social media, or their personal website
--Artists can sign up, log in, and log out
--While signing up, an artist can link their social media to their profile if they choose to
--Users can toggle between the home page and a specific artists profile page via the navigation bar
+- Companies can view all artists
+
+- Companies may sort through all artists based on what their art style is (graffiti, street art, urban contemporary, etc)
+
+- Companies can click on a specific artists card to view their profile page with more details about them
+
+- Companies can contact an artist by email, phone, social media, or their personal website
+
+- Artists can sign up, log in, and log out
+
+- While signing up, an artist can link their social media to their profile if they choose to
+
+- Users can toggle between the home page and a specific artists profile page via the navigation bar
 
 SCREENSHOTS
 
@@ -44,18 +50,23 @@ API REFERENCE
 Via localhost:3000, all artists listed in the database will be found by appending "artists" at the end of the url to view the API data
 
 How to use?
+
 -- As an ARTIST --
+
 1. Create an Account, linking all contact information to your account
 2. View Your Profile Page
 3. Update Your Profile Page, if needed
 4. View All Other Artists
 5. Using the sort button at the top of the home page, scroll through to sort the homepage artists by whichever style you choose
 6. Artist can log out
+
 -- As a COMPANY --
+
 1. View all Artists
 2. Using the sort button at the top of the home page, scroll through to sort the homepage artists by whichever style you choose
 3. View a specific artists profile page by clicking on their card on the home page
 4. Contact whichever artist of their liking via the artists website, email, phone, or linked social media accounts
 
 CREDITS
+
 Contributors: Alexander Virga & Kyle Conlon
