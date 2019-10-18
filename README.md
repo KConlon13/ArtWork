@@ -9,7 +9,7 @@ ArtWork is a platform for businesses to find the perfect artist to paint the off
 BUILD STATUS: Complete
 
 TECH/FRAMEWORKS USED
-Built with:
+
 -React
 -Javascript
 -Ruby on Rails
@@ -24,6 +24,14 @@ Features:
 -Artists can sign up, log in, and log out
 -While signing up, an artist can link their social media to their profile if they choose to
 -Users can toggle between the home page and a specific artists profile page via the navigation bar
+
+SCREENSHOTS
+
+<img width="1283" alt="Screen Shot 2019-10-18 at 11 35 16 AM" src="https://user-images.githubusercontent.com/47828048/67108868-5e8d7880-f19d-11e9-9be1-e64259c1625c.png">
+
+<img width="1286" alt="Screen Shot 2019-10-18 at 11 35 35 AM" src="https://user-images.githubusercontent.com/47828048/67108893-69e0a400-f19d-11e9-86da-d570a13236b0.png">
+
+<img width="1283" alt="Screen Shot 2019-10-18 at 11 35 57 AM" src="https://user-images.githubusercontent.com/47828048/67108918-749b3900-f19d-11e9-95f6-cb8d5266b776.png">
 
 INSTALLATION
 -Backend => in the command line, run: 
