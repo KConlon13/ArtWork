@@ -1,18 +1,19 @@
 # ArtWork
 Bringing mural-needing businesses and money-needing artists together
 
-MOTIVATION
+## Motivation
 Office spaces have changed a lot over the past few years. The days of boring white walls and cubicles are very much long gone for creative companies. Instead- more intimate and homey office environments have taken over. Many of which, have inspiring and visually appealing works of art (graffiti most commonly) all over their office walls. It's a growing and already strong trend for startups and businesses of all sizes in America. So how can an individual artist break into this growing market, without going through the difficult starting up their own mural business? 
 Here's where ArtWork comes in...
 ArtWork is a platform for businesses to find the perfect artist to paint the officespace mural of their corporate dreams. Artists sign up to be featured on the site for businesses to peruse through, and in return find themselves more clients for mural work. 
 
-BUILD STATUS: Complete
+## Build Status
+Complete
 
-TECH/FRAMEWORKS USED
+## Tech/Frameworks Used
 
 Built with React, Javascript, Ruby on Rails, Semantic UI, and React Router
 
-FEATURES
+## Features
 
 - Companies can view all artists
 
@@ -28,7 +29,7 @@ FEATURES
 
 - Users can toggle between the home page and a specific artists profile page via the navigation bar
 
-SCREENSHOTS
+## Screenshots
 
 <img width="1283" alt="Screen Shot 2019-10-18 at 11 35 16 AM" src="https://user-images.githubusercontent.com/47828048/67108868-5e8d7880-f19d-11e9-9be1-e64259c1625c.png">
 
@@ -36,7 +37,7 @@ SCREENSHOTS
 
 <img width="1283" alt="Screen Shot 2019-10-18 at 11 35 57 AM" src="https://user-images.githubusercontent.com/47828048/67108918-749b3900-f19d-11e9-95f6-cb8d5266b776.png">
 
-CODE EXAMPLES
+## Code Examples
 
 <img width="1440" alt="Screen Shot 2019-10-18 at 12 28 23 PM" src="https://user-images.githubusercontent.com/47828048/67111516-15d8be00-f1a3-11e9-97f6-81f561b4244b.png">
 
@@ -45,7 +46,7 @@ CODE EXAMPLES
 <img width="1440" alt="Screen Shot 2019-10-18 at 12 32 12 PM" src="https://user-images.githubusercontent.com/47828048/67111629-5afcf000-f1a3-11e9-84da-75e787069f0b.png">
 
 
-INSTALLATION
+## Installation
 
 -Backend => in the command line, run: 
 
@@ -55,10 +56,10 @@ INSTALLATION
   
 -Frontend => type "npm start" into the command line
 
-API REFERENCE
+## API Reference
 Via localhost:3000, all artists listed in the database will be found by appending "artists" at the end of the url to view the API data
 
-How to use?
+## How to Use
 
 -- As an ARTIST --
 
@@ -76,6 +77,6 @@ How to use?
 3. View a specific artists profile page by clicking on their card on the home page
 4. Contact whichever artist of their liking via the artists website, email, phone, or linked social media accounts
 
-CREDITS
+## CREDITS
 
 Contributors: Alexander Virga & Kyle Conlon
